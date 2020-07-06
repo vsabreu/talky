@@ -1,6 +1,10 @@
 // reload SBT shell every time a SBT change is made
 Global / onChangedBuildSource := ReloadOnSourceChanges
 
+ThisBuild / organization := "io.visity"
+ThisBuild / scalaVersion := "2.13.1"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+
 scalacOptions ++= ScalacOptions.all
 
 lazy val apiGRPCLayer = ApiGRPCLayer.apiGRPCLayer
@@ -16,12 +20,7 @@ lazy val root = (project in file("."))
   .aggregate(coreDomain)
   .aggregate(infrastructureLayer)
   .settings(
-    inThisBuild(
-      List(
-        organization := "io.visity",
-        scalaVersion := "2.13.1"
-      )),
-    name := "visity",
+    name := "root",
     libraryDependencies ++= (ApiGRPCLayer.Dependencies.all ++
       ApiGRPCLayer.Dependencies.all ++
       ApplicationLayer.Dependencies.all ++
