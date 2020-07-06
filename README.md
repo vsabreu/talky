@@ -1,2 +1,2 @@
-# ticket-to-ride
+# Visity
 Toy application for studies purposes
