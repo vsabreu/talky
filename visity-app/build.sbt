@@ -20,7 +20,7 @@ lazy val root = (project in file("."))
   .aggregate(coreDomain)
   .aggregate(infrastructureLayer)
   .settings(
-    name := "root",
+    name := "visity:root",
     libraryDependencies ++= (ApiGRPCLayer.Dependencies.all ++
       ApiGRPCLayer.Dependencies.all ++
       ApplicationLayer.Dependencies.all ++
