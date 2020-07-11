@@ -1,4 +1,4 @@
-package io.visity.domain.visit.valueobject
+package in.vinic.visity.domain.visit.valueobject
 
 import java.util.UUID
 

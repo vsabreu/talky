@@ -1,4 +1,4 @@
-package io.visity.domain.sharedkernel.event
+package in.vinic.visity.domain.common.event
 
 import java.util.UUID
 

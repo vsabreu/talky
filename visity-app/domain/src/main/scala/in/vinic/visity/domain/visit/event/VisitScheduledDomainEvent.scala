@@ -1,8 +1,9 @@
-package io.visity.domain.visit.event
+package in.vinic.visity.domain.visit.event
 
 import java.util.UUID
 
-import io.visity.domain.sharedkernel.event.DomainEventBaseFields
+import in.vinic.visity.domain.common.event.DomainEventBaseFields
+import io.visity.domain.common.event.DomainEventBaseFields
 
 final case class VisitScheduledDomainEvent(
     override val appId: String,
