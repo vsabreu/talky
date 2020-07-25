@@ -10,6 +10,11 @@ object CoreDomain {
     )
 
   object Dependencies {
-    val all: Seq[ModuleID] = Seq()
+    private val CatsCoreVersion = "2.0.0"
+    private val CatsCore = "org.typelevel" %% "cats-core" % CatsCoreVersion
+
+    val all: Seq[ModuleID] = Seq(
+      CatsCore
+    )
   }
 }
